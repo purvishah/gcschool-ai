@@ -17,42 +17,41 @@
   --color-warmOrange: #ee6c2b;
   --color-warmTerracotta: #d4511e;
 
-  /* ✅ Fixed palette (no CSS variables, no HSL) */
-  --color-border: #d1d5db;       /* gray-300 */
-  --color-input: #f3f4f6;        /* gray-100 */
-  --color-ring: #3b82f6;         /* blue-500 */
-  --color-background: #fbfaf9;   /* white */
-  --color-foreground: #2c2521;   /* gray-900 */
+  --color-border: #d1d5db;       
+  --color-input: #f3f4f6;        
+  --color-ring: #3b82f6;         
+  --color-background: #fbfaf9;   
+  --color-foreground: #2c2521;   
 
-  --color-primary: #ee6c2b;              /* blue-600 */
+  --color-primary: #ee6c2b;              
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #efebe7;            /* amber-500 */
+  --color-secondary: #efebe7;            
   --color-secondary-foreground: #ffffff;
 
-  --color-destructive: #dc2626;          /* red-600 */
+  --color-destructive: #dc2626;          
   --color-destructive-foreground: #ffffff;
 
-  --color-muted: #e9e6e2;                /* gray-400 */
-  --color-muted-foreground: #7e7167;     /* gray-800 */
+  --color-muted: #e9e6e2;                
+  --color-muted-foreground: #7e7167;     
 
-  --color-accent: #e7e1da;               /* emerald-500 */
-  --color-accent-foreground: #ffffff;
+  --color-accent: #e7e1da;               
+  --color-accent-foreground: #493e36;
 
-  --color-popover: #f1f5f9;              /* slate-100 */
-  --color-popover-foreground: #0f172a;   /* slate-900 */
+  --color-popover: #f1f5f9;              
+  --color-popover-foreground: #0f172a;   
 
-  --color-card: #faf8f5;                 /* slate-50 */
+  --color-card: #faf8f5;                 
   --color-card-foreground: #0f172a;
 
-  --color-sidebar: #e5e7eb;              /* gray-200 */
-  --color-sidebar-foreground: #2c2521;   /* gray-900 */
-  --color-sidebar-primary: #2563eb;      /* blue-600 */
+  --color-sidebar: #e5e7eb;              
+  --color-sidebar-foreground: #2c2521;   
+  --color-sidebar-primary: #2563eb;      
   --color-sidebar-primary-foreground: #ffffff;
-  --color-sidebar-accent: #e7e1da;       /* emerald-500 */
+  --color-sidebar-accent: #e7e1da;       
   --color-sidebar-accent-foreground: #ffffff;
-  --color-sidebar-border: #d1d5db;       /* gray-300 */
-  --color-sidebar-ring: #3b82f6;         /* blue-500 */
+  --color-sidebar-border: #d1d5db;       
+  --color-sidebar-ring: #3b82f6;         
 
   /* Border radius */
   --radius-lg: 0.5rem;

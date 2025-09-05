@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue"
-import BaseButton from './ui/BaseButton.vue';
+import BaseButton from './ui/BaseButton.vue'
 import { Menu, X, GraduationCap } from "lucide-vue-next"
 
 const isMenuOpen = ref(false)
@@ -40,11 +40,10 @@ const navigationLinks = [
         <!-- Mobile Menu Button -->
         <div class="lg:hidden">
           <button
-            @click="isMenuOpen = !isMenuOpen"
+            @click="isMenuOpen = true"
             class="p-2 rounded-md text-muted-foreground hover:text-primary hover:bg-accent transition-colors duration-200"
           >
-            <X v-if="isMenuOpen" class="h-6 w-6" />
-            <Menu v-else class="h-6 w-6" />
+            <Menu class="h-6 w-6" />
           </button>
         </div>
       </div>
@@ -73,22 +72,48 @@ const navigationLinks = [
       </div>
     </div>
 
-    <!-- Mobile Navigation Menu -->
-    <div v-if="isMenuOpen" class="lg:hidden bg-accent border-t border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav class="flex flex-col space-y-2">
+    <!-- Fullscreen Mobile Navigation Overlay -->
+    <transition name="fade">
+      <div
+        v-if="isMenuOpen"
+        class="fixed inset-0 bg-accent z-50 flex flex-col"
+      >
+        <!-- Close Button -->
+        <div class="flex justify-end p-4 border-b border-border">
+          <button
+            @click="isMenuOpen = false"
+            class="p-2 rounded-md text-muted-foreground hover:text-primary transition-colors duration-200"
+          >
+            <X class="h-8 w-8" />
+          </button>
+        </div>
+
+        <!-- Navigation Links (Top-down list) -->
+        <nav class="flex-1 px-6 py-6 space-y-3 overflow-y-auto">
           <a
             v-for="link in navigationLinks"
             :key="link.name"
             :href="link.href"
-            class="px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary hover:bg-accent rounded-md transition-colors duration-200"
+            class="block px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary hover:bg-card rounded-md transition-colors duration-200"
             @click="isMenuOpen = false"
           >
             {{ link.name }}
           </a>
-          <div class="pt-2"><BaseButton class="w-full text-sm">Donate Now</BaseButton></div>
+
+          <div class="pt-4">
+            <BaseButton class="w-full text-base">Donate Now</BaseButton>
+          </div>
         </nav>
       </div>
-    </div>
+    </transition>
   </header>
 </template>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+</style>
