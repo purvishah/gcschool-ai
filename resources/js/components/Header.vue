@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue"
+import BaseButton from './ui/BaseButton.vue';
 import { Menu, X, GraduationCap } from "lucide-vue-next"
 
 const isMenuOpen = ref(false)
@@ -85,13 +86,7 @@ const navigationLinks = [
           >
             {{ link.name }}
           </a>
-          <div class="pt-2">
-            <button
-              class="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium"
-            >
-              Donate Now
-            </button>
-          </div>
+          <div class="pt-2"><BaseButton class="w-full text-sm">Donate Now</BaseButton></div>
         </nav>
       </div>
     </div>

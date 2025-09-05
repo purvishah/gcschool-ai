@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "tailwindcss-animate";
+/*@plugin "tailwindcss-animate";*/
 
 /* 🌙 Dark mode */
 @custom-variant dark (&:is(.dark *)) ;

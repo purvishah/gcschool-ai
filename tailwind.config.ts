@@ -6,7 +6,4 @@ export default {
     "./client/**/*.{ts,tsx,js,jsx}",
     "./client-vue/**/*.{vue,ts,js}",
   ],
-  plugins: [
-    require("tailwindcss-animate"),
-  ],
 };
