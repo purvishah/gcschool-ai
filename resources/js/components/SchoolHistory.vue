@@ -10,12 +10,16 @@
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">Welcome to Sheth G. C. High School</h2>
           <ul class="space-y-3 mb-8">
             <li v-for="(point,i) in highlights" :key="i" class="flex items-start gap-3 text-foreground">
-              <span class="w-5 h-5 mt-0.5">✅</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
               <span class="text-base text-muted-foreground">{{ point }}</span>
             </li>
-          </ul>
+            <li>
+              <a href="/about" class="inline-flex items-center text-primary hover:underline font-medium">Read more</a>
+            </li>
+          </ul>        
           <div class="flex flex-wrap gap-3">
-            <BaseButton as="a" href="/about" variant="outline">Read more</BaseButton>
+            <a href="/about" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">Learn About Us</a>
+            <a href="/contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border border-input bg-background hover:bg-accent hover:text-accent-foreground h-10 px-4 py-2">Contact School</a>
           </div>
         </div>
       </div>

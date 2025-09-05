@@ -1,11 +1,80 @@
-@import 'tailwindcss';
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+/* 🌙 Dark mode */
+@custom-variant dark (&:is(.dark *)) ;
+
+/* 🎨 Theme tokens */
+@theme {
+  /* Container */
+  --container-padding: 2rem;
+  --container-2xl: 1400px;
+
+  /* Warm theme colors */
+  --color-warmCream: #faf7f2;
+  --color-warmBeige: #f5f0e8;
+  --color-warmBrown: #8b6f47;
+  --color-warmOrange: #ee6c2b;
+  --color-warmTerracotta: #d4511e;
+
+  /* ✅ Fixed palette (no CSS variables, no HSL) */
+  --color-border: #d1d5db;       /* gray-300 */
+  --color-input: #f3f4f6;        /* gray-100 */
+  --color-ring: #3b82f6;         /* blue-500 */
+  --color-background: #fbfaf9;   /* white */
+  --color-foreground: #2c2521;   /* gray-900 */
+
+  --color-primary: #ee6c2b;              /* blue-600 */
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #efebe7;            /* amber-500 */
+  --color-secondary-foreground: #ffffff;
+
+  --color-destructive: #dc2626;          /* red-600 */
+  --color-destructive-foreground: #ffffff;
+
+  --color-muted: #e9e6e2;                /* gray-400 */
+  --color-muted-foreground: #7e7167;     /* gray-800 */
+
+  --color-accent: #e7e1da;               /* emerald-500 */
+  --color-accent-foreground: #ffffff;
+
+  --color-popover: #f1f5f9;              /* slate-100 */
+  --color-popover-foreground: #0f172a;   /* slate-900 */
+
+  --color-card: #faf8f5;                 /* slate-50 */
+  --color-card-foreground: #0f172a;
+
+  --color-sidebar: #e5e7eb;              /* gray-200 */
+  --color-sidebar-foreground: #2c2521;   /* gray-900 */
+  --color-sidebar-primary: #2563eb;      /* blue-600 */
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #e7e1da;       /* emerald-500 */
+  --color-sidebar-accent-foreground: #ffffff;
+  --color-sidebar-border: #d1d5db;       /* gray-300 */
+  --color-sidebar-ring: #3b82f6;         /* blue-500 */
+
+  /* Border radius */
+  --radius-lg: 0.5rem;
+  --radius-md: 0.375rem;
+  --radius-sm: 0.25rem;
+}
+
+/* 🎞️ Animations */
+@keyframes accordion-down {
+  from { height: 0 }
+  to { height: 100% }
+}
+
+@keyframes accordion-up {
+  from { height: 100% }
+  to { height: 0 }
+}
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
