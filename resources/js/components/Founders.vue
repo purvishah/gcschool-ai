@@ -4,7 +4,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
         <figure class="bg-card rounded-xl shadow p-4">
           <div class="overflow-hidden rounded-lg">
-            <img src="images/home/girdharlal.png" alt="Sheth Girdharlal Nihalchand" class="w-full aspect-[4/5] object-cover" loading="lazy" />
+            <img src="/images/home/girdharlal.png" alt="Sheth Girdharlal Nihalchand" class="w-full aspect-[4/5] object-cover" loading="lazy" />
           </div>
           <figcaption class="mt-3 text-center text-sm text-foreground font-medium">Sheth Girdharlal Nihalchand</figcaption>
         </figure>
