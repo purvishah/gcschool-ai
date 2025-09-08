@@ -2,7 +2,7 @@
   <div class="relative w-full h-[420px] lg:h-[520px] overflow-hidden select-none">
     <!-- Background Image -->
     <div
-      class="absolute inset-0 bg-no-repeat transition-all duration-500 ease-linear"
+      class="absolute inset-0 bg-no-repeat"
       :style="bgStyle"
     >
       <div class="absolute inset-0 bg-black/30" />
@@ -66,12 +66,9 @@ import { onMounted, onUnmounted, ref, reactive, computed } from 'vue';
 
 const currentSlide = ref(0);
 const slides = reactive([
-  { image: '/images/home/slider/Slider1-Hall-Inauguration.jpg' },
-  { image: '/images/home/slider/Slider2-Hall-Inauguration.jpg' },
-  { image: '/images/home/slider/Slider3-Hall-Inauguration.jpg' },
-  { image: '/images/home/slider/Slider4-School-Inauguration.jpg' },
-  { image: '/images/home/slider/Slider5-School-Inauguration.jpg' },
-  { image: '/images/home/slider/Slider6-School-Inauguration.jpg' },
+  { image: '/images/home/slider/Slider9-Main-BldgD.jpg' },
+  { image: '/images/home/slider/Slider7-School-Inauguration.jpg' },
+  { image: '/images/home/slider/Slider8-School-Inauguration.jpg' },
 ]);
 
 const next = () => { currentSlide.value = (currentSlide.value + 1) % slides.length; };
