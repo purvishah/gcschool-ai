@@ -65,7 +65,7 @@ const news = [
   <section class="py-16 bg-background">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Why Choose Us -->
-      <div class="mb-20">
+      <div class="mb-20 hidden">
         <div class="text-center mb-12">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
             Why Choose G.C. HighSchool?
