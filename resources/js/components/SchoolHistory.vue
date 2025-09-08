@@ -3,7 +3,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="relative group overflow-hidden rounded-2xl shadow-lg bg-card lg:order-2">
-          <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=1400&h=900&fit=crop&crop=center" alt="G.C. HighSchool campus" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="/images/home/slider/Slider9-Main-BldgD.jpg" alt="G.C. HighSchool campus" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
         <div class="lg:order-1">
