@@ -10,9 +10,8 @@
         </figure>
 
         <div>
-          <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">Founders Of The Institute</h2>
-          <p class="text-muted-foreground leading-relaxed">SHETH G.C. HIGH SCHOOL, Pilvai is named after the name of two brothers,Sheth Girdharlal Nihalchand and Sheth Chunilal Nihalchand.</p>
-          <p class="text-muted-foreground leading-relaxed">FOUNDERS OF INSTITUTE.Sheth Girdharlal and Sheth Chunilal both of them were native of village PILVAI and FOUNDERS OF INSTITUTE IN AD-1927.They belong to the VAISHNAV family. They inherited god gifted qualities of social work, donating for noble causes for the larger benefits to the society in the areas of ,health, education, community services, agriculture as also on religious occasions. The Descendants of the family were awarded by the GAYAKWAD SARKAR in Gayakwadi state for contribution to the society in the fields of charity and social amenities.</p>
+          <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Founders</h2>
+          <p class="text-muted-foreground leading-relaxed">SHETH G.C. HIGH SCHOOL, Pilvai is named after the two brothers, Sheth Girdharlal Nihalchand and Sheth Chunilal Nihalchand. Founders of the institute in 1927, both were natives of Pilvai from a Vaishnav family, known for their lifelong commitment to social service and philanthropy—supporting health, education, community services, agriculture, and religious causes. The family's descendants were recognized by the Gayakwad Sarkar in the Gayakwadi state for their charitable contributions and social amenities.</p>
         </div>
 
         <figure class="bg-card rounded-xl shadow p-4">
