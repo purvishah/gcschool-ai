@@ -34,12 +34,10 @@ const academicLinks = [
         <!-- School Info -->
         <div class="lg:col-span-1">
           <div class="flex items-center space-x-3 mb-6">
-            <div class="bg-primary p-2 rounded-lg">
-              <GraduationCap class="h-8 w-8 text-white" />
-            </div>
+            <img src="/images/gcschool-logo.png" alt="GC School" class="h-24 w-auto" loading="lazy" />
             <div>
               <h3 class="text-xl font-bold">G.C. HighSchool</h3>
-              <p class="text-sm text-muted">Since 1950</p>
+              <p class="text-sm text-muted">Since 1927</p>
             </div>
           </div>
           <p class="text-muted mb-6 leading-relaxed">

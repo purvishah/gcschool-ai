@@ -1,7 +1,7 @@
 <template>
   <section class="py-16 bg-background">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
         <figure class="bg-card rounded-xl shadow p-4">
           <div class="overflow-hidden rounded-lg">
             <img src="/images/home/girdharlal.png" alt="Sheth Girdharlal Nihalchand" class="w-full aspect-[4/5] object-cover" loading="lazy" />
@@ -9,9 +9,11 @@
           <figcaption class="mt-3 text-center text-sm text-foreground font-medium">Sheth Girdharlal Nihalchand</figcaption>
         </figure>
 
-        <div>
+        <div class="col-span-2">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Founders</h2>
-          <p class="text-muted-foreground leading-relaxed">SHETH G.C. HIGH SCHOOL, Pilvai is named after the two brothers, Sheth Girdharlal Nihalchand and Sheth Chunilal Nihalchand. Founders of the institute in 1927, both were natives of Pilvai from a Vaishnav family, known for their lifelong commitment to social service and philanthropy—supporting health, education, community services, agriculture, and religious causes. The family's descendants were recognized by the Gayakwad Sarkar in the Gayakwadi state for their charitable contributions and social amenities.</p>
+          <p class="text-muted-foreground leading-relaxed">SHETH G.C. HIGH SCHOOL, Pilvai is named in honor of two visionary brothers, Sheth Girdharlal Nihalchand and Sheth Chunilal Nihalchand, whose legacy continues to inspire generations.</p>
+          <p class="text-muted-foreground leading-relaxed">The founders of this esteemed institution, Sheth Girdharlal and Sheth Chunilal, were proud natives of the village of Pilvai and laid the foundation of the school in 1927. Belonging to a respected Vaishnav family, both brothers were blessed with exceptional qualities of leadership, generosity, and deep commitment to the welfare of society. They dedicated their lives to social service, contributing selflessly to noble causes in diverse areas such as education, healthcare, agriculture, community development, and religious activities.</p>
+          <p class="text-muted-foreground leading-relaxed">Their philanthropic spirit was widely recognized, and the descendants of the family were honored by the Gayakwad Sarkar of the Gaekwadi State for their invaluable contributions in the fields of charity and public welfare. The establishment of Sheth G.C. High School stands as a shining example of their vision to uplift society through knowledge and service.</p>
         </div>
 
         <figure class="bg-card rounded-xl shadow p-4">

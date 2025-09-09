@@ -24,7 +24,7 @@
       <button v-for="(_,i) in slides" :key="i" @click="currentSlide = i" :class="['w-3 h-3 rounded-full transition-all duration-200', i===currentSlide?'bg-white':'bg-white/50']" />
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
+    <div class="absolute hidden bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6">
       <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-3 gap-6 text-white text-center">
           <div class="flex items-center justify-center space-x-2">
@@ -53,10 +53,9 @@ import BaseButton from './ui/BaseButton.vue';
 const currentSlide = ref(0);
 const slides = reactive([
   { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider7-School-Inauguration.jpg', cta: 'Learn More' },
-  { title: 'Annual Sports Day 2024', subtitle: 'Celebrating Athletic Excellence', description: "Our students showcased exceptional talent and sportsmanship at this year's inter-house sports competition.", image: '/images/home/slider/Slider9-Main-BldgD.jpg', cta: 'View Gallery' },
-  { title: 'Science Exhibition Winners', subtitle: 'Innovation and Discovery', description: 'Congratulations to our students for winning regional science fair with their innovative projects.', image: '/images/home/slider/Slider8-School-Inauguration.jpg', cta: 'Read More' },
-  { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider5-School-Inauguration.jpg', cta: 'Learn More' },
+  { title: 'Science Exhibition Winners', subtitle: 'Innovation and Discovery', description: 'Congratulations to our students for winning regional science fair with their innovative projects.', image: '/images/home/slider/Slider5-School-Inauguration.jpg', cta: 'Read More' },
   { title: 'Annual Sports Day 2024', subtitle: 'Celebrating Athletic Excellence', description: "Our students showcased exceptional talent and sportsmanship at this year's inter-house sports competition.", image: '/images/home/slider/Slider6-School-Inauguration.jpg', cta: 'View Gallery' },
+  { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider4-School-Inauguration.jpg', cta: 'Learn More' },
 ]);
 
 const next = () => { currentSlide.value = (currentSlide.value + 1) % slides.length; };

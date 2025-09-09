@@ -21,12 +21,10 @@ const navigationLinks = [
 <template>
   <header class="bg-card shadow-lg border-b-2 border-primary sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-4">
+      <div class="flex justify-between items-center py-1.5">
         <!-- Logo and School Name -->
         <div class="flex items-center space-x-3">
-          <div class="bg-primary p-2 rounded-lg">
-            <GraduationCap class="h-8 w-8 text-white" />
-          </div>
+          <img src="/images/gcschool-logo.png" alt="GC School" class="h-16 w-auto" loading="lazy" />
           <div>
             <h1 class="text-xl lg:text-2xl font-bold text-foreground">
               G.C. HighSchool
@@ -64,7 +62,7 @@ const navigationLinks = [
             </a>
           </div>
           <button
-            class="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium"
+            class="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium text-sm"
           >
             Donate Now
           </button>
@@ -101,7 +99,7 @@ const navigationLinks = [
           </a>
 
           <div class="pt-4">
-            <BaseButton class="w-full text-base">Donate Now</BaseButton>
+            <BaseButton class="w-full text-sm">Donate Now</BaseButton>
           </div>
         </nav>
       </div>
