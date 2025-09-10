@@ -27,10 +27,10 @@ const navigationLinks = [
           <img src="/images/gcschool-logo.png" alt="GC School" class="h-16 w-auto" loading="lazy" />
           <div>
             <h1 class="text-xl lg:text-2xl font-bold text-foreground">
-              G.C. HighSchool
+              G.C.High School, Pilvai
             </h1>
             <p class="text-sm text-muted-foreground hidden sm:block">
-              Sheth Girdharlal Chunilal High School Pilvai
+              Sheth Girdharlal Chunilal High School
             </p>
           </div>
         </div>
