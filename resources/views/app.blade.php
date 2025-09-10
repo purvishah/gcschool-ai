@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G.C. HighSchool</title>
+    <title>G.C.High School, Pilvai</title>
     @vite(['resources/js/app.js'])
 </head>
 <body>

@@ -98,7 +98,7 @@ watch(
           Our Educational Sections
         </h2>
         <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
-          G.C. HighSchool provides comprehensive education across three main
+          G.C.High School provides comprehensive education across three main
           sections, ensuring holistic development from early childhood to
           college preparation.
         </p>

@@ -44,7 +44,7 @@ const news = [
     date: "March 10, 2024",
     title: "Board Exam Results Announced",
     description:
-      "G.C. HighSchool achieves 98% pass rate in Class 10 and 95% in Class 12 board examinations.",
+      "G.C.High School achieves 98% pass rate in Class 10 and 95% in Class 12 board examinations.",
     image:
       "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop&crop=center",
     category: "Achievements",
@@ -68,7 +68,7 @@ const news = [
       <div class="mb-20 hidden">
         <div class="text-center mb-12">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">
-            Why Choose G.C. HighSchool?
+            Why Choose G.C.High School?
           </h2>
           <p class="text-lg text-muted-foreground max-w-3xl mx-auto">
             Over 70 years of educational excellence, nurturing generations of successful

@@ -52,7 +52,7 @@ import BaseButton from './ui/BaseButton.vue';
 
 const currentSlide = ref(0);
 const slides = reactive([
-  { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider7-School-Inauguration.jpg', cta: 'Learn More' },
+  { title: 'Established in 1927', subtitle: "Providing quality education to children from all sections of society at affordable costs", image: '/images/home/slider/Slider7-School-Inauguration.jpg', cta: 'Learn More' },
   { title: 'Science Exhibition Winners', subtitle: 'Innovation and Discovery', description: 'Congratulations to our students for winning regional science fair with their innovative projects.', image: '/images/home/slider/Slider5-School-Inauguration.jpg', cta: 'Read More' },
   { title: 'Annual Sports Day 2024', subtitle: 'Celebrating Athletic Excellence', description: "Our students showcased exceptional talent and sportsmanship at this year's inter-house sports competition.", image: '/images/home/slider/Slider6-School-Inauguration.jpg', cta: 'View Gallery' },
   { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider4-School-Inauguration.jpg', cta: 'Learn More' },
@@ -68,6 +68,6 @@ onUnmounted(() => { clearInterval(timer); });
 const bgStyle = computed(() => ({
   backgroundImage: `url(${slides[currentSlide.value].image})`,
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  backgroundPosition: 'start',
 }));
 </script>

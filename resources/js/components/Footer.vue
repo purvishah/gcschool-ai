@@ -36,7 +36,7 @@ const academicLinks = [
           <div class="flex items-center space-x-3 mb-6">
             <img src="/images/gcschool-logo.png" alt="GC School" class="h-24 w-auto" loading="lazy" />
             <div>
-              <h3 class="text-xl font-bold">G.C. HighSchool</h3>
+              <h3 class="text-xl font-bold">G.C.High School</h3>
               <p class="text-sm text-muted">Since 1927</p>
             </div>
           </div>
@@ -112,7 +112,7 @@ const academicLinks = [
 
             <div class="flex items-center space-x-3">
               <Mail class="h-5 w-5 text-primary flex-shrink-0" />
-              <p class="text-muted">info@gchighschool.org</p>
+              <p class="text-muted"><a href="mailto:gcpilvai@gmail.com">gcpilvai@gmail.com</a></p>
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@ const academicLinks = [
       <div class="border-t border-border mt-12 pt-8">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <p class="text-muted text-sm">
-            © 2024 G.C. HighSchool. All rights reserved.
+            © 2024 G.C.High School. All rights reserved.
           </p>
           <div class="flex space-x-6 mt-4 md:mt-0">
             <a

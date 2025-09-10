@@ -3,12 +3,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="relative group overflow-hidden rounded-2xl shadow-lg bg-card lg:order-2">
-          <img src="/images/home/slider/Slider9-Main-BldgD.jpg" alt="G.C. HighSchool campus" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+          <img src="/images/home/slider/Slider9-Main-BldgD.jpg" alt="G.C.High School campus" class="w-full h-full object-cover aspect-[4/3] transition-transform duration-500 group-hover:scale-105" loading="lazy" />
           <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         </div>
         <div class="lg:order-1">
           <h2 class="text-3xl lg:text-4xl font-bold text-foreground mb-4">Our Legacy & History</h2>
-          <p class="text-lg text-muted-foreground mb-6">G.C. HighSchool has a proud legacy of nurturing generations of learners with a commitment to academic excellence and holistic development.</p>
+          <p class="text-lg text-muted-foreground mb-6">G.C.High School has a proud legacy of nurturing generations of learners with a commitment to academic excellence and holistic development.</p>
           <ul class="space-y-3 mb-8">
             <li v-for="(point,i) in highlights" :key="i" class="flex items-start gap-3 text-foreground">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check w-5 h-5 text-primary mt-0.5 flex-shrink-0" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
