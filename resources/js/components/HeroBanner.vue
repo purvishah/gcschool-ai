@@ -1,12 +1,12 @@
 <template>
   <div class="relative w-full h-[420px] lg:h-[520px] overflow-hidden select-none">
-    <div class="absolute inset-0 bg-no-repeat" :style="bgStyle">
-      <div class="absolute inset-0 bg-black/40" />
+    <div class="absolute inset-0 bg-no-repeat transition-opacity duration-300 ease-linear" :style="bgStyle">
+      <div class="absolute inset-0 bg-black/25" />
     </div>
 
     <div class="relative z-10 flex items-center justify-center h-full">
       <div class="text-center text-white max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight">{{ slides[currentSlide].title }}</h1>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 leading-tight text-shadow-lg text-shadow-black/50">{{ slides[currentSlide].title }}</h1>
         <h2 class="text-xl sm:text-2xl lg:text-3xl font-light mb-6 text-blue-100">{{ slides[currentSlide].subtitle }}</h2>
         <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto leading-relaxed">{{ slides[currentSlide].description }}</p>
         <BaseButton size="lg" class="px-8 py-3 text-lg font-semibold">{{ slides[currentSlide].cta }}</BaseButton>
@@ -52,10 +52,10 @@ import BaseButton from './ui/BaseButton.vue';
 
 const currentSlide = ref(0);
 const slides = reactive([
-  { title: 'Established in 1927', subtitle: "Providing quality education to children from all sections of society at affordable costs", image: '/images/home/slider/Slider7-School-Inauguration.jpg', cta: 'Learn More' },
-  { title: 'Science Exhibition Winners', subtitle: 'Innovation and Discovery', description: 'Congratulations to our students for winning regional science fair with their innovative projects.', image: '/images/home/slider/Slider5-School-Inauguration.jpg', cta: 'Read More' },
-  { title: 'Annual Sports Day 2024', subtitle: 'Celebrating Athletic Excellence', description: "Our students showcased exceptional talent and sportsmanship at this year's inter-house sports competition.", image: '/images/home/slider/Slider6-School-Inauguration.jpg', cta: 'View Gallery' },
-  { title: 'Excellence in Education Since 1950', subtitle: "Shaping Tomorrow's Leaders Today", description: 'Join our community of learners where tradition meets innovation in providing quality education.', image: '/images/home/slider/Slider4-School-Inauguration.jpg', cta: 'Learn More' },
+  { title: 'Established in 1927', description: "Providing quality education to children from all sections of society at affordable costs", image: '/images/home/slider/Slider7-School-Inauguration.jpg', cta: 'Learn More' },
+ /* { title: 'Science Exhibition Winners', subtitle: 'Innovation and Discovery', description: 'Congratulations to our students for winning regional science fair with their innovative projects.', image: '/images/home/slider/Slider5-School-Inauguration.jpg', cta: 'Read More' },
+  { title: 'Annual Sports Day 2024', subtitle: 'Celebrating Athletic Excellence', description: "Our students showcased exceptional talent and sportsmanship at this year's inter-house sports competition.", image: '/images/home/slider/Slider6-School-Inauguration.jpg', cta: 'View Gallery' },*/
+  { title: 'Inauguration Ceremony', description: "Presided over by Honourable Home Minister Shri Amitbhai Shah.", image: '/images/home/slider/Slider4-School-Inauguration.jpg', cta: 'Learn More' },
 ]);
 
 const next = () => { currentSlide.value = (currentSlide.value + 1) % slides.length; };

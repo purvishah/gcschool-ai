@@ -32,9 +32,9 @@ const academicLinks = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- School Info -->
-        <div class="lg:col-span-1">
+        <div class="lg:col-span-2">
           <div class="flex items-center space-x-3 mb-6">
-            <img src="/images/gcschool-logo.png" alt="GC School" class="h-24 w-auto" loading="lazy" />
+            <img src="/images/gcschool-logo.png" alt="GC School" class="h-32 w-auto" loading="lazy" />
             <div>
               <h3 class="text-xl font-bold">G.C.High School</h3>
               <p class="text-sm text-muted">Since 1927</p>
@@ -66,21 +66,6 @@ const academicLinks = [
           <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
           <ul class="space-y-3">
             <li v-for="link in quickLinks" :key="link.name">
-              <a
-                :href="link.href"
-                class="text-muted hover:text-card transition-colors duration-200"
-              >
-                {{ link.name }}
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Academic Links -->
-        <div>
-          <h4 class="text-lg font-semibold mb-6">Academics</h4>
-          <ul class="space-y-3">
-            <li v-for="link in academicLinks" :key="link.name">
               <a
                 :href="link.href"
                 class="text-muted hover:text-card transition-colors duration-200"
