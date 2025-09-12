@@ -121,7 +121,7 @@ onUnmounted(() => {
 const bgStyle = computed(() => ({
   backgroundImage: `url(${slides[currentSlide.value].image})`,
   backgroundSize: "cover",
-  backgroundPosition: "center",
+  backgroundPosition: "top",
 }));
 </script>
 
