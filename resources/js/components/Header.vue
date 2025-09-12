@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue"
 import BaseButton from './ui/BaseButton.vue'
-import { Menu, X, GraduationCap } from "lucide-vue-next"
+import { Menu, X } from "lucide-vue-next"
 
 const isMenuOpen = ref(false)
 
@@ -19,20 +19,27 @@ const navigationLinks = [
 </script>
 
 <template>
-  <header class="bg-card shadow-lg border-b-2 border-primary sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center py-1.5">
-        <!-- Logo and School Name -->
-        <div class="flex items-center space-x-3">
-          <img src="/images/gcschool-logo.png" alt="GC School" class="h-16 w-auto" loading="lazy" />
-          <div>
-            <h1 class="text-xl lg:text-2xl font-bold text-foreground">
-              G.C.High School, Pilvai
-            </h1>
-            <p class="text-sm text-muted-foreground hidden sm:block">
-              Sheth Girdharlal Chunilal High School
-            </p>
-          </div>
+  <header class="relative w-full bg-card shadow-lg border-b-2 border-primary sticky top-0 z-50">
+    <!-- Logo (absolute, large, spanning header height) -->
+    <div class="absolute inset-0 flex items-center h-full z-50 max-w-[120px]">
+      <img 
+        src="/images/gcschool-logo.png" 
+        alt="GC School"
+        class="h-16 lg:h-28 w-auto object-contain p-2" 
+      />
+    </div>
+
+    <!-- Top Section -->
+    <div class="w-full bg-card">
+      <div class="flex justify-between items-center py-1.5 px-4 sm:px-6 lg:px-8">
+        <!-- School Name -->
+        <div class="ml-12 md:ml-12 lg:ml-22"> <!-- reduced margin -->
+          <h1 class="text-xl lg:text-2xl font-bold text-foreground">
+            G.C.High School, Pilvai
+          </h1>
+          <p class="text-sm text-muted-foreground hidden sm:block">
+            Sheth Girdharlal Chunilal High School
+          </p>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -48,29 +55,27 @@ const navigationLinks = [
     </div>
 
     <!-- Desktop Navigation -->
-    <div class="hidden lg:block bg-accent border-t border-t-[0.8px] border-border">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1.5">
-        <nav class="flex items-center justify-between">
-          <div class="flex items-center space-x-1">
-            <a
-              v-for="link in navigationLinks"
-              :key="link.name"
-              :href="link.href"
-              class="px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-card rounded-md transition-colors duration-200"
-            >
-              {{ link.name }}
-            </a>
-          </div>
-          <button
-            class="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium text-sm"
+    <div class="hidden lg:block bg-accent border-t border-border">
+      <div class="flex items-center justify-between py-1.5 px-4 sm:px-6 lg:px-8 ml-22">
+        <div class="flex items-center space-x-1">
+          <a
+            v-for="link in navigationLinks"
+            :key="link.name"
+            :href="link.href"
+            class="px-1.5 xl:px-3 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-card rounded-md transition-colors duration-200"
           >
-            Donate Now
-          </button>
-        </nav>
+            {{ link.name }}
+          </a>
+        </div>
+        <button
+          class="bg-primary hover:bg-primary/90 text-primary-foreground px-4 py-2 rounded-md font-medium text-sm"
+        >
+          Donate Now
+        </button>
       </div>
     </div>
 
-    <!-- Fullscreen Mobile Navigation Overlay -->
+    <!-- Fullscreen Mobile Navigation -->
     <transition name="fade">
       <div
         v-if="isMenuOpen"
@@ -86,7 +91,7 @@ const navigationLinks = [
           </button>
         </div>
 
-        <!-- Navigation Links (Top-down list) -->
+        <!-- Nav Links -->
         <nav class="flex-1 px-6 py-6 space-y-3 overflow-y-auto">
           <a
             v-for="link in navigationLinks"
